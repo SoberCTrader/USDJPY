@@ -1,6 +1,6 @@
 # USDJPY Phase II - packaging manifest
 
-Originals verified by md5 at pack time; originals left untouched. Digest: REPORT.md / receipt.json / anomalies.csv (phase2_digest.py). Cost tiers PLACEHOLDER 0.3/0.5 pips (no live spread supplied) - re-run with real tiers when provided.
+Originals verified by md5 at pack time; originals left untouched. Digest: REPORT.md / receipt.json / anomalies.csv (phase2_digest.py). Cost tiers from live spread: base 0.0, stress 0.1 pips (0.001/unit), pip=0.01 (user-supplied 2026-11-23).
 
 | original file | original md5 | bytes | rows | first bar | last bar | .gz md5 | .gz bytes |
 |---|---|---|---|---|---|---|---|

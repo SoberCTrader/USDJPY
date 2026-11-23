@@ -1,6 +1,6 @@
 # USDJPY PHASE II - DATA RECEIPT & DIGEST
 
-Run: phase2_digest.py (python 3.12.14) at 2026-11-23 08:16:11 UTC. Input dir: `/workspace/USDJPY`. Files found: 8.
+Run: phase2_digest.py (python 3.12.14) at 2026-11-23 08:24:07 UTC. Input dir: `/workspace/USDJPY`. Files found: 8.
 
 ## MANIFEST
 
@@ -88,7 +88,7 @@ Timezone evidence (finest timeframe t100): UTC: session-open days (first bar aft
 
 ## CALIBRATION DIGEST
 
-(per-year tables shown for 2021+; full history incl. pre-2021 in receipt.json. Cost tiers for USDJPY: base 0.0030, stress 0.0050 per unit = 0.300/0.500 pips, as % of avg bar range.)
+(per-year tables shown for 2021+; full history incl. pre-2021 in receipt.json. Cost tiers for USDJPY: base 0.0000, stress 0.0010 per unit = 0.000/0.100 pips, as % of avg bar range.)
 
 ### d1 (reference bars/day ~n/a; ref ticks/day ~104000)
 
@@ -102,11 +102,11 @@ Timezone evidence (finest timeframe t100): UTC: session-open days (first bar aft
 
 | year | bars | days | bars/day | ticks/day | min/bar | avg rng | med rng | avg rng % | base % | stress % |
 |---|---|---|---|---|---|---|---|---|---|---|
-| 2022 | 230672 | 311 | 741.7 | 74171.0 | 1.25 | 0.038 | 0.032 | 0.03 | 7.92 | 13.19 |
-| 2023 | 217850 | 311 | 700.5 | 70048.0 | 1.42 | 0.038 | 0.033 | 0.03 | 7.9 | 13.17 |
-| 2024 | 232215 | 314 | 739.5 | 73954.0 | 1.3 | 0.04 | 0.033 | 0.03 | 7.59 | 12.66 |
-| 2025 | 227674 | 312 | 729.7 | 72972.0 | 1.33 | 0.039 | 0.034 | 0.03 | 7.61 | 12.68 |
-| 2026 | 187147 | 280 | 668.4 | 66838.0 | 1.43 | 0.031 | 0.026 | 0.02 | 9.64 | 16.06 |
+| 2022 | 230672 | 311 | 741.7 | 74171.0 | 1.25 | 0.038 | 0.032 | 0.03 | 0.0 | 2.64 |
+| 2023 | 217850 | 311 | 700.5 | 70048.0 | 1.42 | 0.038 | 0.033 | 0.03 | 0.0 | 2.63 |
+| 2024 | 232215 | 314 | 739.5 | 73954.0 | 1.3 | 0.04 | 0.033 | 0.03 | 0.0 | 2.53 |
+| 2025 | 227674 | 312 | 729.7 | 72972.0 | 1.33 | 0.039 | 0.034 | 0.03 | 0.0 | 2.54 |
+| 2026 | 187147 | 280 | 668.4 | 66838.0 | 1.43 | 0.031 | 0.026 | 0.02 | 0.0 | 3.21 |
 
 - hourly bar density (00-24, printed hours): 00:53009 01:51659 02:40231 03:35040 04:33113 05:37359 06:48776 07:59575 08:58904 09:50844 10:45150 11:46264 12:61989 13:73934 14:77030 15:67361 16:51344 17:42691 18:40685 19:37045 20:25955 21:11632 22:18061 23:27907
 - dead hours: none; top hours: 14,13,15,12,07,08
@@ -133,5 +133,5 @@ Timezone evidence (finest timeframe t100): UTC: session-open days (first bar aft
 - Gap threshold per timeframe = max(6h, 2.5x median inter-bar gap). Class: weekend = Thu/Fri/Sat -> Sun/Mon 40-80h (intraday DST-adjusted 48-50h: 49h + Sun-Fri UTC offset, 4h EDT / 5h EST); holiday = span covers a computed US federal holiday 1998-2026 (Good Friday via computus, observance shifts, + 2025-01-09); else UNEXPLAINED (each listed). Hole map: zero-bar dates in [first,last] excl. Saturdays + listed holidays.
 - Bad ticks (instrument-scaled, % of price): |dClose| > 1.5% of prev close (across_gap if gap > threshold), wick (H-L) > 2.5% of close, H or C == next session's reopen open (3dp) after such a gap (feed-contamination class). All flagged -> anomalies.csv; nothing deleted or fixed.
 - Cross-validation: same-timeframe overlap equality; t500 = groups of 5 consecutive t100 (all 5 phases swept from file start, exact OHLCV + span); t300 = groups of 3; t100/t750 vs groups of 100/750 t1 ticks (mid and bid); daily H/L of finest frame vs h4/d1 under BOTH day definitions: printed date and DST-aware session day (open 22:00 UTC EDT / 23:00 UTC EST); --synth-t500 builds t500 from t100 groups of 5 phase 0, marked SYNTHETIC (on XAUUSD native t500 matched phase 3, 375380/375380 exact, so synthetic phase-0 grid is not bit-identical to the native chart).
-- Digest: per-year bars/day, implied ticks/day = bars/day x tick size, median min/bar, avg/median range and % of close; cost ratio = spread / avg range (base 0.003, stress 0.005 per unit = 0.3/0.5 pips); hourly density on printed hours; Feb-Mar 2026 blowoff/crash metrics; weekend seam drift = reopen - prior close. Timezone: session-open first-bar hour histogram of finest timeframe vs the 21:00/22:00 UTC boundary (DST-shifting).
+- Digest: per-year bars/day, implied ticks/day = bars/day x tick size, median min/bar, avg/median range and % of close; cost ratio = spread / avg range (base 0.0, stress 0.001 per unit = 0.0/0.1 pips); hourly density on printed hours; Feb-Mar 2026 blowoff/crash metrics; weekend seam drift = reopen - prior close. Timezone: session-open first-bar hour histogram of finest timeframe vs the 21:00/22:00 UTC boundary (DST-shifting).
 - Budget: REPORT.md hard-capped at 15 KB (long lists truncated here; full detail in receipt.json / anomalies.csv). Prices 3dp, percentages 2dp, timestamps full date+time as printed.
