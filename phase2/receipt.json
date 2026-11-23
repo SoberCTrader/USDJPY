@@ -1,5 +1,5 @@
 {
- "run": "2026-11-23 08:13:47 UTC",
+ "run": "2026-11-23 08:16:11 UTC",
  "tool": "phase2_digest.py",
  "python": "3.12.14",
  "instrument": "USDJPY",
@@ -48,6 +48,106 @@
    "tick_size": 14400
   },
   {
+   "name": "CCMonthCapture USDJPY t100 20220101-20221231.csv",
+   "bytes": 12810654,
+   "md5": "4b6e79401991736d94cba78396c37e2f",
+   "rows": 230672,
+   "kind": "bar",
+   "first": "2022-01-02 23:03:42",
+   "last": "2022-12-30 21:55:46",
+   "tf": "t100",
+   "claimed": "2022 dates:2022-01-01,2022-12-31",
+   "actual": "2022-01-02 23:03:42 .. 2022-12-30 21:55:46",
+   "symbol": "USDJPY-consistent",
+   "symbol_note": "median 135.172 in [113.482..151.934]",
+   "header": null,
+   "swapped": false,
+   "delim": ",",
+   "bad_nf_count": 0,
+   "bad_nf": [],
+   "tick_size": 100
+  },
+  {
+   "name": "CCMonthCapture USDJPY t100 20230101-20231231.csv",
+   "bytes": 12088672,
+   "md5": "434c03b5095ca52ecdc220dacb4a1d87",
+   "rows": 217850,
+   "kind": "bar",
+   "first": "2023-01-01 22:19:01",
+   "last": "2023-12-29 21:56:06",
+   "tf": "t100",
+   "claimed": "2023 dates:2023-01-01,2023-12-31",
+   "actual": "2023-01-01 22:19:01 .. 2023-12-29 21:56:06",
+   "symbol": "USDJPY-consistent",
+   "symbol_note": "median 139.548 in [127.239..151.907]",
+   "header": null,
+   "swapped": false,
+   "delim": ",",
+   "bad_nf_count": 0,
+   "bad_nf": [],
+   "tick_size": 100
+  },
+  {
+   "name": "CCMonthCapture USDJPY t100 20240101-20241231.csv",
+   "bytes": 12901623,
+   "md5": "8f0030db823f8c2a4f5f1d31180a3fcc",
+   "rows": 232215,
+   "kind": "bar",
+   "first": "2024-01-01 22:15:52",
+   "last": "2024-12-31 21:56:57",
+   "tf": "t100",
+   "claimed": "2024 dates:2024-01-01,2024-12-31",
+   "actual": "2024-01-01 22:15:52 .. 2024-12-31 21:56:57",
+   "symbol": "USDJPY-consistent",
+   "symbol_note": "median 150.422 in [139.588..161.947]",
+   "header": null,
+   "swapped": false,
+   "delim": ",",
+   "bad_nf_count": 0,
+   "bad_nf": [],
+   "tick_size": 100
+  },
+  {
+   "name": "CCMonthCapture USDJPY t100 20250101-20251231.csv",
+   "bytes": 12651200,
+   "md5": "c530ab5391588e9cba15dc4836ed867a",
+   "rows": 227674,
+   "kind": "bar",
+   "first": "2025-01-01 22:05:01",
+   "last": "2025-12-31 21:58:58",
+   "tf": "t100",
+   "claimed": "2025 dates:2025-01-01,2025-12-31",
+   "actual": "2025-01-01 22:05:01 .. 2025-12-31 21:58:58",
+   "symbol": "USDJPY-consistent",
+   "symbol_note": "median 148.535 in [139.903..158.878]",
+   "header": null,
+   "swapped": false,
+   "delim": ",",
+   "bad_nf_count": 0,
+   "bad_nf": [],
+   "tick_size": 100
+  },
+  {
+   "name": "CCMonthCapture USDJPY t100 20260101-20261123.csv",
+   "bytes": 10400839,
+   "md5": "a62e34d53e8fb6b5bd35d8ddd80cfdfc",
+   "rows": 187147,
+   "kind": "bar",
+   "first": "2026-01-01 22:37:18",
+   "last": "2026-11-23 07:18:13",
+   "tf": "t100",
+   "claimed": "2026 dates:2026-01-01,2026-11-23",
+   "actual": "2026-01-01 22:37:18 .. 2026-11-23 07:18:13",
+   "symbol": "USDJPY-consistent",
+   "symbol_note": "median 158.321 in [152.101..163.985]",
+   "header": null,
+   "swapped": false,
+   "delim": ",",
+   "bad_nf_count": 0,
+   "bad_nf": [],
+   "tick_size": 100
+  },
+  {
    "name": "CCMonthCapture USDJPY t750 20220101-20261123.csv",
    "bytes": 8113534,
    "md5": "1df1e195e8d28b670d3022b096af0868",
@@ -88,6 +188,15 @@
    "overlap": 0,
    "conflicts": 0
   },
+  "t100": {
+   "rows": 1095558,
+   "first": "2022-01-02 23:03:42",
+   "last": "2026-11-23 07:18:13",
+   "active_days": 1528,
+   "agree": 0,
+   "overlap": 0,
+   "conflicts": 0
+  },
   "t750": {
    "rows": 146078,
    "first": "2022-01-02 23:05:22",
@@ -101,6 +210,7 @@
  "gap_thresholds_h": {
   "d1": 10.0,
   "h4": 10.0,
+  "t100": 6.0,
   "t750": 6.0
  },
  "integrity": {
@@ -115,6 +225,16 @@
    "wrong_field_count_rows": 0
   },
   "h4": {
+   "duplicate_timestamps": 0,
+   "non_monotonic": [],
+   "non_monotonic_count": 0,
+   "ohlc_violations": [],
+   "ohlc_violation_count": 0,
+   "zero_range": 0,
+   "zero_volume": 0,
+   "wrong_field_count_rows": 0
+  },
+  "t100": {
    "duplicate_timestamps": 0,
    "non_monotonic": [],
    "non_monotonic_count": 0,
@@ -17842,6 +17962,2078 @@
    "tf": "h4"
   },
   {
+   "from": "2022-01-07 21:51:30",
+   "to": "2022-01-09 22:08:06",
+   "hours": 48.28,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-01-14 21:55:01",
+   "to": "2022-01-16 22:09:56",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-01-21 21:53:14",
+   "to": "2022-01-23 22:09:12",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-01-28 21:53:23",
+   "to": "2022-01-30 22:03:11",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-02-04 21:56:50",
+   "to": "2022-02-06 22:06:28",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-02-11 21:55:20",
+   "to": "2022-02-13 22:02:30",
+   "hours": 48.12,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-02-18 21:55:09",
+   "to": "2022-02-20 22:01:07",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-02-25 21:55:10",
+   "to": "2022-02-27 22:05:44",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-03-04 21:55:01",
+   "to": "2022-03-06 22:06:11",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-03-11 21:51:39",
+   "to": "2022-03-13 21:07:26",
+   "hours": 47.26,
+   "class": "weekend",
+   "note": "47.3h (DST-adjusted expected 48h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-03-18 20:54:38",
+   "to": "2022-03-20 21:12:03",
+   "hours": 48.29,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-03-25 20:54:00",
+   "to": "2022-03-27 21:17:33",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-04-01 20:55:38",
+   "to": "2022-04-03 21:16:18",
+   "hours": 48.34,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-04-08 20:55:06",
+   "to": "2022-04-10 21:09:52",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-04-15 20:50:09",
+   "to": "2022-04-17 21:23:52",
+   "hours": 48.56,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-04-22 20:56:38",
+   "to": "2022-04-24 21:52:39",
+   "hours": 48.93,
+   "class": "weekend",
+   "note": "48.9h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-04-29 20:54:31",
+   "to": "2022-05-01 21:01:09",
+   "hours": 48.11,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-05-06 20:55:00",
+   "to": "2022-05-08 21:36:47",
+   "hours": 48.7,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-05-13 20:51:43",
+   "to": "2022-05-15 21:20:13",
+   "hours": 48.48,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-05-20 20:54:46",
+   "to": "2022-05-22 21:14:28",
+   "hours": 48.33,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-05-27 20:53:30",
+   "to": "2022-05-29 21:09:40",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-06-03 20:56:01",
+   "to": "2022-06-05 21:09:41",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-06-10 20:56:10",
+   "to": "2022-06-12 21:16:20",
+   "hours": 48.34,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-06-17 20:54:56",
+   "to": "2022-06-19 21:15:49",
+   "hours": 48.35,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-06-24 20:55:10",
+   "to": "2022-06-26 21:18:42",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-07-01 20:56:45",
+   "to": "2022-07-03 21:35:04",
+   "hours": 48.64,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-07-08 20:53:37",
+   "to": "2022-07-10 21:03:17",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-07-15 20:56:35",
+   "to": "2022-07-17 21:44:57",
+   "hours": 48.81,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-07-22 20:56:03",
+   "to": "2022-07-24 21:17:08",
+   "hours": 48.35,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-07-29 20:53:32",
+   "to": "2022-07-31 21:07:25",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-08-05 20:56:00",
+   "to": "2022-08-07 21:16:44",
+   "hours": 48.35,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-08-12 20:56:39",
+   "to": "2022-08-14 21:33:16",
+   "hours": 48.61,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-08-19 20:56:03",
+   "to": "2022-08-21 21:40:36",
+   "hours": 48.74,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-08-26 20:55:15",
+   "to": "2022-08-28 21:01:27",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-09-02 20:56:38",
+   "to": "2022-09-04 21:50:02",
+   "hours": 48.89,
+   "class": "weekend",
+   "note": "48.9h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-09-09 20:56:39",
+   "to": "2022-09-11 21:10:35",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-09-16 20:56:17",
+   "to": "2022-09-18 22:00:07",
+   "hours": 49.06,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-09-23 20:55:39",
+   "to": "2022-09-25 21:17:44",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-09-30 20:56:58",
+   "to": "2022-10-02 22:00:49",
+   "hours": 49.06,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-10-07 20:56:39",
+   "to": "2022-10-09 22:01:00",
+   "hours": 49.07,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-10-14 20:55:01",
+   "to": "2022-10-16 21:10:17",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-10-21 20:56:31",
+   "to": "2022-10-23 21:25:47",
+   "hours": 48.49,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-10-28 20:55:44",
+   "to": "2022-10-30 21:03:42",
+   "hours": 48.13,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-11-04 20:55:20",
+   "to": "2022-11-06 22:12:09",
+   "hours": 49.28,
+   "class": "weekend",
+   "note": "49.3h (DST-adjusted expected 50h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-11-11 21:56:01",
+   "to": "2022-11-13 22:01:00",
+   "hours": 48.08,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-11-18 21:56:30",
+   "to": "2022-11-20 22:32:03",
+   "hours": 48.59,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-11-25 21:55:00",
+   "to": "2022-11-27 22:23:44",
+   "hours": 48.48,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-12-02 21:56:40",
+   "to": "2022-12-04 22:19:42",
+   "hours": 48.38,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-12-09 21:56:58",
+   "to": "2022-12-11 22:32:03",
+   "hours": 48.58,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-12-16 21:56:40",
+   "to": "2022-12-18 22:12:47",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-12-23 21:55:12",
+   "to": "2022-12-26 22:31:25",
+   "hours": 72.6,
+   "class": "weekend",
+   "note": "72.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2022-12-30 21:55:46",
+   "to": "2023-01-01 22:19:01",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-01-06 21:56:53",
+   "to": "2023-01-08 22:24:52",
+   "hours": 48.47,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-01-13 21:56:00",
+   "to": "2023-01-15 22:28:11",
+   "hours": 48.54,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-01-20 21:56:17",
+   "to": "2023-01-22 23:00:32",
+   "hours": 49.07,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-01-27 21:55:38",
+   "to": "2023-01-29 22:09:34",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-02-03 21:55:23",
+   "to": "2023-02-05 22:05:32",
+   "hours": 48.17,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-02-10 21:54:45",
+   "to": "2023-02-12 22:15:22",
+   "hours": 48.34,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-02-17 21:55:17",
+   "to": "2023-02-19 22:01:38",
+   "hours": 48.11,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-02-24 21:56:54",
+   "to": "2023-02-26 22:26:43",
+   "hours": 48.5,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-03-03 21:55:58",
+   "to": "2023-03-05 22:15:11",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-03-10 21:54:58",
+   "to": "2023-03-12 21:01:51",
+   "hours": 47.11,
+   "class": "weekend",
+   "note": "47.1h (DST-adjusted expected 48h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-03-17 20:57:10",
+   "to": "2023-03-19 21:04:18",
+   "hours": 48.12,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-03-24 20:58:30",
+   "to": "2023-03-26 21:43:57",
+   "hours": 48.76,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-03-31 20:58:44",
+   "to": "2023-04-02 21:32:09",
+   "hours": 48.56,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-04-07 20:51:54",
+   "to": "2023-04-09 22:00:34",
+   "hours": 49.14,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-04-14 20:58:07",
+   "to": "2023-04-16 22:01:33",
+   "hours": 49.06,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-04-21 20:57:34",
+   "to": "2023-04-23 21:04:08",
+   "hours": 48.11,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-04-28 20:58:39",
+   "to": "2023-04-30 21:44:22",
+   "hours": 48.76,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-05-05 20:53:48",
+   "to": "2023-05-07 21:01:00",
+   "hours": 48.12,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-05-12 20:58:54",
+   "to": "2023-05-14 21:56:39",
+   "hours": 48.96,
+   "class": "weekend",
+   "note": "49.0h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-05-19 20:58:52",
+   "to": "2023-05-21 22:00:15",
+   "hours": 49.02,
+   "class": "weekend",
+   "note": "49.0h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-05-26 20:56:04",
+   "to": "2023-05-28 21:20:19",
+   "hours": 48.4,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-06-02 20:58:45",
+   "to": "2023-06-04 21:59:36",
+   "hours": 49.01,
+   "class": "weekend",
+   "note": "49.0h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-06-09 20:54:51",
+   "to": "2023-06-11 21:13:57",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-06-16 20:58:21",
+   "to": "2023-06-18 21:31:59",
+   "hours": 48.56,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-06-23 20:53:45",
+   "to": "2023-06-25 21:08:22",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-06-30 20:53:40",
+   "to": "2023-07-02 21:06:09",
+   "hours": 48.21,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-07-07 20:55:03",
+   "to": "2023-07-09 21:43:07",
+   "hours": 48.8,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-07-14 20:56:43",
+   "to": "2023-07-16 21:21:31",
+   "hours": 48.41,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-07-21 20:56:22",
+   "to": "2023-07-23 21:39:46",
+   "hours": 48.72,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-07-28 20:55:36",
+   "to": "2023-07-30 21:13:54",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-08-04 20:54:40",
+   "to": "2023-08-06 21:21:32",
+   "hours": 48.45,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-08-11 20:55:05",
+   "to": "2023-08-13 21:06:17",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-08-18 20:56:41",
+   "to": "2023-08-20 21:49:27",
+   "hours": 48.88,
+   "class": "weekend",
+   "note": "48.9h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-08-25 20:56:28",
+   "to": "2023-08-27 21:44:52",
+   "hours": 48.81,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-09-01 20:55:17",
+   "to": "2023-09-03 21:36:55",
+   "hours": 48.69,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-09-08 20:55:07",
+   "to": "2023-09-10 21:04:07",
+   "hours": 48.15,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-09-15 20:55:03",
+   "to": "2023-09-17 21:11:20",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-09-22 20:54:49",
+   "to": "2023-09-24 21:07:52",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-09-29 20:56:21",
+   "to": "2023-10-01 21:12:16",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-10-06 20:55:52",
+   "to": "2023-10-08 21:14:03",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-10-13 20:54:54",
+   "to": "2023-10-15 21:06:10",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-10-20 20:54:46",
+   "to": "2023-10-22 21:14:41",
+   "hours": 48.33,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-10-27 20:55:17",
+   "to": "2023-10-29 21:20:38",
+   "hours": 48.42,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-11-03 20:56:49",
+   "to": "2023-11-05 22:21:06",
+   "hours": 49.4,
+   "class": "weekend",
+   "note": "49.4h (DST-adjusted expected 50h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-11-10 21:55:42",
+   "to": "2023-11-12 22:18:54",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-11-17 21:52:56",
+   "to": "2023-11-19 22:07:19",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-11-24 21:55:09",
+   "to": "2023-11-26 22:12:24",
+   "hours": 48.29,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-12-01 21:56:03",
+   "to": "2023-12-03 22:12:28",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-12-08 21:55:55",
+   "to": "2023-12-10 22:09:15",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-12-15 21:55:42",
+   "to": "2023-12-17 22:06:59",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-12-22 21:54:01",
+   "to": "2023-12-25 22:24:34",
+   "hours": 72.51,
+   "class": "weekend",
+   "note": "72.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2023-12-29 21:56:06",
+   "to": "2024-01-01 22:15:52",
+   "hours": 72.33,
+   "class": "weekend",
+   "note": "72.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-01-05 21:54:29",
+   "to": "2024-01-07 22:07:10",
+   "hours": 48.21,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-01-12 21:56:06",
+   "to": "2024-01-14 22:10:52",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-01-19 21:53:48",
+   "to": "2024-01-21 22:16:09",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-01-26 21:56:45",
+   "to": "2024-01-28 23:00:34",
+   "hours": 49.06,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-02-02 21:54:39",
+   "to": "2024-02-04 22:11:19",
+   "hours": 48.28,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-02-09 21:56:02",
+   "to": "2024-02-11 23:01:13",
+   "hours": 49.09,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-02-16 21:56:25",
+   "to": "2024-02-18 22:41:59",
+   "hours": 48.76,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-02-23 21:54:34",
+   "to": "2024-02-25 22:15:04",
+   "hours": 48.34,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-03-01 21:56:37",
+   "to": "2024-03-03 22:43:22",
+   "hours": 48.78,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-03-08 21:56:02",
+   "to": "2024-03-10 21:39:09",
+   "hours": 47.72,
+   "class": "weekend",
+   "note": "47.7h (DST-adjusted expected 48h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-03-15 20:55:51",
+   "to": "2024-03-17 21:14:13",
+   "hours": 48.31,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-03-22 20:54:30",
+   "to": "2024-03-24 21:27:53",
+   "hours": 48.56,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-03-29 20:49:58",
+   "to": "2024-03-31 21:30:00",
+   "hours": 48.67,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-04-05 20:52:58",
+   "to": "2024-04-07 21:29:24",
+   "hours": 48.61,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-04-12 20:54:10",
+   "to": "2024-04-14 21:23:36",
+   "hours": 48.49,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-04-19 20:55:00",
+   "to": "2024-04-21 21:21:21",
+   "hours": 48.44,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-04-26 20:55:33",
+   "to": "2024-04-28 21:17:57",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-05-03 20:55:29",
+   "to": "2024-05-05 21:06:19",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-05-10 20:55:38",
+   "to": "2024-05-12 21:24:40",
+   "hours": 48.48,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-05-17 20:54:49",
+   "to": "2024-05-19 21:05:39",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-05-24 20:51:50",
+   "to": "2024-05-26 21:05:01",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-05-31 20:56:44",
+   "to": "2024-06-02 21:07:39",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-06-07 20:54:05",
+   "to": "2024-06-09 21:04:05",
+   "hours": 48.17,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-06-14 20:53:07",
+   "to": "2024-06-16 21:06:33",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-06-21 20:56:22",
+   "to": "2024-06-23 21:10:55",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-06-28 20:56:53",
+   "to": "2024-06-30 21:19:04",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-07-05 20:55:05",
+   "to": "2024-07-07 21:07:52",
+   "hours": 48.21,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-07-12 20:55:09",
+   "to": "2024-07-14 21:09:42",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-07-19 20:53:00",
+   "to": "2024-07-21 21:04:48",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-07-26 20:56:41",
+   "to": "2024-07-28 21:22:55",
+   "hours": 48.44,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-08-02 20:56:47",
+   "to": "2024-08-04 21:08:08",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-08-09 20:56:07",
+   "to": "2024-08-11 21:05:00",
+   "hours": 48.15,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-08-16 20:56:36",
+   "to": "2024-08-18 21:08:54",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-08-23 20:56:15",
+   "to": "2024-08-25 21:11:32",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-08-30 20:56:43",
+   "to": "2024-09-01 21:14:27",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-09-06 20:56:31",
+   "to": "2024-09-08 21:05:59",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-09-13 20:55:09",
+   "to": "2024-09-15 21:01:05",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-09-20 20:53:21",
+   "to": "2024-09-22 21:05:16",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-09-27 20:56:39",
+   "to": "2024-09-29 21:32:46",
+   "hours": 48.6,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-10-04 20:55:34",
+   "to": "2024-10-06 21:02:03",
+   "hours": 48.11,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-10-11 20:56:39",
+   "to": "2024-10-13 21:05:50",
+   "hours": 48.15,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-10-18 20:54:52",
+   "to": "2024-10-20 21:13:44",
+   "hours": 48.31,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-10-25 20:55:16",
+   "to": "2024-10-27 21:01:33",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-11-01 20:56:31",
+   "to": "2024-11-03 22:06:17",
+   "hours": 49.16,
+   "class": "weekend",
+   "note": "49.2h (DST-adjusted expected 50h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-11-08 21:56:19",
+   "to": "2024-11-10 22:05:00",
+   "hours": 48.14,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-11-15 21:55:39",
+   "to": "2024-11-17 22:06:53",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-11-22 21:56:16",
+   "to": "2024-11-24 22:04:27",
+   "hours": 48.14,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-11-29 21:53:34",
+   "to": "2024-12-01 22:04:11",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-06 21:55:10",
+   "to": "2024-12-08 22:05:07",
+   "hours": 48.17,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-13 21:56:10",
+   "to": "2024-12-15 22:11:07",
+   "hours": 48.25,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-20 21:54:56",
+   "to": "2024-12-22 22:10:18",
+   "hours": 48.26,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-24 21:46:45",
+   "to": "2024-12-25 22:17:35",
+   "hours": 24.51,
+   "class": "holiday",
+   "note": "Christmas",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-27 21:56:51",
+   "to": "2024-12-29 22:10:06",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2024-12-31 21:56:57",
+   "to": "2025-01-01 22:05:01",
+   "hours": 24.13,
+   "class": "holiday",
+   "note": "New Year's Day",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-01-03 21:56:58",
+   "to": "2025-01-05 22:27:03",
+   "hours": 48.5,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-01-10 21:55:25",
+   "to": "2025-01-12 22:14:43",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-01-17 21:55:47",
+   "to": "2025-01-19 22:10:26",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-01-24 21:53:31",
+   "to": "2025-01-26 22:04:31",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-01-31 21:55:59",
+   "to": "2025-02-02 22:07:39",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-02-07 21:56:07",
+   "to": "2025-02-09 22:07:24",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-02-14 21:56:31",
+   "to": "2025-02-16 22:19:03",
+   "hours": 48.38,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-02-21 21:54:03",
+   "to": "2025-02-23 22:11:35",
+   "hours": 48.29,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-02-28 21:53:40",
+   "to": "2025-03-02 22:11:29",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-03-07 21:54:42",
+   "to": "2025-03-09 21:32:51",
+   "hours": 47.64,
+   "class": "weekend",
+   "note": "47.6h (DST-adjusted expected 48h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-03-14 20:54:47",
+   "to": "2025-03-16 21:06:18",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-03-21 20:51:01",
+   "to": "2025-03-23 21:24:16",
+   "hours": 48.55,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-03-28 20:55:09",
+   "to": "2025-03-30 21:08:43",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-04-04 20:56:11",
+   "to": "2025-04-06 21:01:17",
+   "hours": 48.09,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-04-11 20:56:45",
+   "to": "2025-04-13 21:05:00",
+   "hours": 48.14,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-04-18 20:46:52",
+   "to": "2025-04-20 21:29:01",
+   "hours": 48.7,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-04-25 20:51:24",
+   "to": "2025-04-27 21:28:47",
+   "hours": 48.62,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-05-02 20:56:15",
+   "to": "2025-05-04 21:30:27",
+   "hours": 48.57,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-05-09 20:54:36",
+   "to": "2025-05-11 21:16:58",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-05-16 20:56:36",
+   "to": "2025-05-18 21:49:35",
+   "hours": 48.88,
+   "class": "weekend",
+   "note": "48.9h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-05-23 20:53:53",
+   "to": "2025-05-25 21:16:08",
+   "hours": 48.37,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-05-30 20:56:57",
+   "to": "2025-06-01 21:14:06",
+   "hours": 48.29,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-06-06 20:54:57",
+   "to": "2025-06-08 21:23:35",
+   "hours": 48.48,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-06-13 20:56:11",
+   "to": "2025-06-15 21:08:51",
+   "hours": 48.21,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-06-20 20:56:51",
+   "to": "2025-06-22 21:12:20",
+   "hours": 48.26,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-06-27 20:56:59",
+   "to": "2025-06-29 21:10:19",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-07-04 20:55:59",
+   "to": "2025-07-06 21:19:25",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-07-11 20:53:42",
+   "to": "2025-07-13 21:25:39",
+   "hours": 48.53,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-07-18 20:55:46",
+   "to": "2025-07-20 21:06:57",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-07-25 20:56:26",
+   "to": "2025-07-27 21:13:21",
+   "hours": 48.28,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-08-01 20:55:51",
+   "to": "2025-08-03 21:05:15",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-08-08 20:55:20",
+   "to": "2025-08-10 21:05:27",
+   "hours": 48.17,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-08-15 20:56:30",
+   "to": "2025-08-17 21:21:33",
+   "hours": 48.42,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-08-22 20:56:41",
+   "to": "2025-08-24 21:15:00",
+   "hours": 48.31,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-08-29 20:56:47",
+   "to": "2025-08-31 21:33:49",
+   "hours": 48.62,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-09-05 20:56:31",
+   "to": "2025-09-07 21:02:48",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-09-12 20:56:32",
+   "to": "2025-09-14 21:15:39",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-09-19 20:56:02",
+   "to": "2025-09-21 21:05:19",
+   "hours": 48.15,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-09-26 20:55:19",
+   "to": "2025-09-28 21:08:15",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-10-03 20:55:05",
+   "to": "2025-10-05 21:01:23",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-10-10 20:56:26",
+   "to": "2025-10-12 21:01:21",
+   "hours": 48.08,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-10-17 20:53:43",
+   "to": "2025-10-19 21:05:09",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-10-24 20:55:08",
+   "to": "2025-10-26 21:01:10",
+   "hours": 48.1,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-10-31 20:55:44",
+   "to": "2025-11-02 22:20:58",
+   "hours": 49.42,
+   "class": "weekend",
+   "note": "49.4h (DST-adjusted expected 50h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-11-07 21:56:26",
+   "to": "2025-11-09 22:08:40",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-11-14 21:56:43",
+   "to": "2025-11-16 22:23:57",
+   "hours": 48.45,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-11-21 21:55:41",
+   "to": "2025-11-23 22:11:17",
+   "hours": 48.26,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-11-28 21:56:22",
+   "to": "2025-11-30 22:09:22",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-05 21:56:03",
+   "to": "2025-12-07 22:08:16",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-12 21:54:01",
+   "to": "2025-12-14 22:14:23",
+   "hours": 48.34,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-19 21:55:14",
+   "to": "2025-12-21 22:05:15",
+   "hours": 48.17,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-24 21:56:19",
+   "to": "2025-12-26 00:56:41",
+   "hours": 27.01,
+   "class": "holiday",
+   "note": "Christmas",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-26 21:55:49",
+   "to": "2025-12-28 22:11:11",
+   "hours": 48.26,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2025-12-31 21:58:58",
+   "to": "2026-01-01 22:37:18",
+   "hours": 24.64,
+   "class": "holiday",
+   "note": "New Year's Day",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-01-02 21:55:45",
+   "to": "2026-01-04 22:20:38",
+   "hours": 48.41,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-01-09 21:56:29",
+   "to": "2026-01-11 22:10:04",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-01-16 21:54:23",
+   "to": "2026-01-18 22:05:41",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-01-23 21:54:54",
+   "to": "2026-01-25 22:03:34",
+   "hours": 48.14,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-01-30 21:56:02",
+   "to": "2026-02-01 22:07:01",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-02-06 21:56:03",
+   "to": "2026-02-08 22:05:46",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-02-13 21:56:03",
+   "to": "2026-02-15 22:14:30",
+   "hours": 48.31,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-02-20 21:55:07",
+   "to": "2026-02-22 22:06:40",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-02-27 21:56:46",
+   "to": "2026-03-01 22:05:37",
+   "hours": 48.15,
+   "class": "weekend",
+   "note": "48.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-03-06 21:55:49",
+   "to": "2026-03-08 21:05:16",
+   "hours": 47.16,
+   "class": "weekend",
+   "note": "47.2h (DST-adjusted expected 48h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-03-13 20:55:32",
+   "to": "2026-03-15 21:08:44",
+   "hours": 48.22,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-03-20 20:55:00",
+   "to": "2026-03-22 21:07:02",
+   "hours": 48.2,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-03-27 20:56:01",
+   "to": "2026-03-29 21:12:01",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-04-03 20:50:47",
+   "to": "2026-04-05 21:14:20",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-04-10 20:55:40",
+   "to": "2026-04-12 21:16:48",
+   "hours": 48.35,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-04-17 20:54:30",
+   "to": "2026-04-19 21:33:41",
+   "hours": 48.65,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-04-24 20:52:09",
+   "to": "2026-04-26 21:11:31",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-05-01 20:54:37",
+   "to": "2026-05-03 21:05:31",
+   "hours": 48.18,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-05-08 20:55:44",
+   "to": "2026-05-10 21:25:41",
+   "hours": 48.5,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-05-15 20:53:18",
+   "to": "2026-05-17 21:20:15",
+   "hours": 48.45,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-05-22 20:55:51",
+   "to": "2026-05-24 21:15:03",
+   "hours": 48.32,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-05-29 20:52:56",
+   "to": "2026-05-31 21:12:33",
+   "hours": 48.33,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-06-05 20:55:03",
+   "to": "2026-06-07 21:18:39",
+   "hours": 48.39,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-06-12 20:51:34",
+   "to": "2026-06-14 21:08:04",
+   "hours": 48.27,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-06-19 20:55:02",
+   "to": "2026-06-21 22:00:20",
+   "hours": 49.09,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-06-26 20:55:23",
+   "to": "2026-06-28 21:38:53",
+   "hours": 48.73,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-07-03 20:55:16",
+   "to": "2026-07-05 21:59:54",
+   "hours": 49.08,
+   "class": "weekend",
+   "note": "49.1h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-07-10 20:55:13",
+   "to": "2026-07-12 21:29:37",
+   "hours": 48.57,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-07-17 20:53:14",
+   "to": "2026-07-19 21:31:37",
+   "hours": 48.64,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-07-24 20:55:45",
+   "to": "2026-07-26 21:13:53",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-07-31 20:56:54",
+   "to": "2026-08-02 21:08:17",
+   "hours": 48.19,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-08-07 20:56:08",
+   "to": "2026-08-09 21:10:02",
+   "hours": 48.23,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-08-14 20:54:03",
+   "to": "2026-08-16 21:40:38",
+   "hours": 48.78,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-08-21 20:54:34",
+   "to": "2026-08-23 21:21:46",
+   "hours": 48.45,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-08-28 20:54:25",
+   "to": "2026-08-30 21:24:01",
+   "hours": 48.49,
+   "class": "weekend",
+   "note": "48.5h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-09-04 20:55:21",
+   "to": "2026-09-06 21:04:43",
+   "hours": 48.16,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-09-11 20:56:29",
+   "to": "2026-09-13 21:40:03",
+   "hours": 48.73,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-09-18 20:55:25",
+   "to": "2026-09-20 21:38:08",
+   "hours": 48.71,
+   "class": "weekend",
+   "note": "48.7h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-09-25 20:54:51",
+   "to": "2026-09-27 21:12:59",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-10-02 20:51:56",
+   "to": "2026-10-04 21:27:44",
+   "hours": 48.6,
+   "class": "weekend",
+   "note": "48.6h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-10-09 20:56:20",
+   "to": "2026-10-11 21:15:06",
+   "hours": 48.31,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-10-16 20:54:12",
+   "to": "2026-10-18 21:08:35",
+   "hours": 48.24,
+   "class": "weekend",
+   "note": "48.2h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-10-23 20:54:51",
+   "to": "2026-10-25 21:45:30",
+   "hours": 48.84,
+   "class": "weekend",
+   "note": "48.8h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-10-30 20:56:31",
+   "to": "2026-11-01 22:40:26",
+   "hours": 49.73,
+   "class": "weekend",
+   "note": "49.7h (DST-adjusted expected 50h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-11-06 21:55:47",
+   "to": "2026-11-08 22:11:27",
+   "hours": 48.26,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-11-13 21:55:00",
+   "to": "2026-11-15 22:13:12",
+   "hours": 48.3,
+   "class": "weekend",
+   "note": "48.3h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
+   "from": "2026-11-20 21:56:05",
+   "to": "2026-11-22 22:22:28",
+   "hours": 48.44,
+   "class": "weekend",
+   "note": "48.4h (DST-adjusted expected 49h)",
+   "tf": "t100"
+  },
+  {
    "from": "2022-01-07 21:15:07",
    "to": "2022-01-09 22:41:19",
    "hours": 49.44,
@@ -19925,6 +22117,10 @@
    "holiday": 11,
    "UNEXPLAINED": 1
   },
+  "t100": {
+   "weekend": 255,
+   "holiday": 4
+  },
   "t750": {
    "weekend": 255,
    "holiday": 4
@@ -20799,6 +22995,11 @@
    "2022-12-28",
    "2022-12-29",
    "2022-12-30",
+   "2023-12-24",
+   "2023-12-31"
+  ],
+  "t100": [
+   "2022-12-25",
    "2023-12-24",
    "2023-12-31"
   ],
@@ -29103,6 +31304,2303 @@
     "tf": "h4"
    }
   ],
+  "t100": [
+   {
+    "from": "2022-11-11 21:56:01",
+    "to": "2022-11-13 22:01:00",
+    "prev_close": 138.769,
+    "reopen": 139.066,
+    "drift": 0.297,
+    "drift_pct": 0.214,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-10-03 20:55:05",
+    "to": "2025-10-05 21:01:23",
+    "prev_close": 149.323,
+    "reopen": 149.438,
+    "drift": 0.115,
+    "drift_pct": 0.077,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-06-24 20:55:10",
+    "to": "2022-06-26 21:18:42",
+    "prev_close": 135.15,
+    "reopen": 135.058,
+    "drift": -0.092,
+    "drift_pct": -0.0681,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-05-05 20:53:48",
+    "to": "2023-05-07 21:01:00",
+    "prev_close": 134.826,
+    "reopen": 134.744,
+    "drift": -0.082,
+    "drift_pct": -0.0608,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-02-28 21:53:40",
+    "to": "2025-03-02 22:11:29",
+    "prev_close": 150.652,
+    "reopen": 150.741,
+    "drift": 0.089,
+    "drift_pct": 0.0591,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-09-13 20:55:09",
+    "to": "2024-09-15 21:01:05",
+    "prev_close": 140.85,
+    "reopen": 140.777,
+    "drift": -0.073,
+    "drift_pct": -0.0518,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-05-13 20:51:43",
+    "to": "2022-05-15 21:20:13",
+    "prev_close": 129.281,
+    "reopen": 129.346,
+    "drift": 0.065,
+    "drift_pct": 0.0503,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-10-23 20:54:51",
+    "to": "2026-10-25 21:45:30",
+    "prev_close": 156.965,
+    "reopen": 157.043,
+    "drift": 0.078,
+    "drift_pct": 0.0497,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-04-25 20:51:24",
+    "to": "2025-04-27 21:28:47",
+    "prev_close": 143.553,
+    "reopen": 143.482,
+    "drift": -0.071,
+    "drift_pct": -0.0495,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-04-11 20:56:45",
+    "to": "2025-04-13 21:05:00",
+    "prev_close": 143.953,
+    "reopen": 143.894,
+    "drift": -0.059,
+    "drift_pct": -0.041,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-12-30 21:55:46",
+    "to": "2023-01-01 22:19:01",
+    "prev_close": 130.743,
+    "reopen": 130.79,
+    "drift": 0.047,
+    "drift_pct": 0.0359,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-02-03 21:55:23",
+    "to": "2023-02-05 22:05:32",
+    "prev_close": 132.088,
+    "reopen": 132.13,
+    "drift": 0.042,
+    "drift_pct": 0.0318,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-04-04 20:56:11",
+    "to": "2025-04-06 21:01:17",
+    "prev_close": 145.615,
+    "reopen": 145.573,
+    "drift": -0.042,
+    "drift_pct": -0.0288,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-09-09 20:56:39",
+    "to": "2022-09-11 21:10:35",
+    "prev_close": 142.214,
+    "reopen": 142.174,
+    "drift": -0.04,
+    "drift_pct": -0.0281,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-04-26 20:55:33",
+    "to": "2024-04-28 21:17:57",
+    "prev_close": 157.737,
+    "reopen": 157.698,
+    "drift": -0.039,
+    "drift_pct": -0.0247,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-04-05 20:52:58",
+    "to": "2024-04-07 21:29:24",
+    "prev_close": 151.589,
+    "reopen": 151.553,
+    "drift": -0.036,
+    "drift_pct": -0.0237,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-11-10 21:55:42",
+    "to": "2023-11-12 22:18:54",
+    "prev_close": 151.434,
+    "reopen": 151.404,
+    "drift": -0.03,
+    "drift_pct": -0.0198,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-05-23 20:53:53",
+    "to": "2025-05-25 21:16:08",
+    "prev_close": 142.458,
+    "reopen": 142.432,
+    "drift": -0.026,
+    "drift_pct": -0.0183,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-07-18 20:55:46",
+    "to": "2025-07-20 21:06:57",
+    "prev_close": 147.955,
+    "reopen": 147.982,
+    "drift": 0.027,
+    "drift_pct": 0.0182,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-02-17 21:55:17",
+    "to": "2023-02-19 22:01:38",
+    "prev_close": 134.242,
+    "reopen": 134.218,
+    "drift": -0.024,
+    "drift_pct": -0.0179,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-07-08 20:53:37",
+    "to": "2022-07-10 21:03:17",
+    "prev_close": 136.064,
+    "reopen": 136.04,
+    "drift": -0.024,
+    "drift_pct": -0.0176,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-07-26 20:56:41",
+    "to": "2024-07-28 21:22:55",
+    "prev_close": 153.748,
+    "reopen": 153.774,
+    "drift": 0.026,
+    "drift_pct": 0.0169,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-02-10 21:54:45",
+    "to": "2023-02-12 22:15:22",
+    "prev_close": 131.359,
+    "reopen": 131.378,
+    "drift": 0.019,
+    "drift_pct": 0.0145,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-04-10 20:55:40",
+    "to": "2026-04-12 21:16:48",
+    "prev_close": 159.498,
+    "reopen": 159.52,
+    "drift": 0.022,
+    "drift_pct": 0.0138,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-06-28 20:56:53",
+    "to": "2024-06-30 21:19:04",
+    "prev_close": 160.751,
+    "reopen": 160.729,
+    "drift": -0.022,
+    "drift_pct": -0.0137,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-05-17 20:54:49",
+    "to": "2024-05-19 21:05:39",
+    "prev_close": 155.601,
+    "reopen": 155.58,
+    "drift": -0.021,
+    "drift_pct": -0.0135,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-01-24 21:53:31",
+    "to": "2025-01-26 22:04:31",
+    "prev_close": 155.712,
+    "reopen": 155.691,
+    "drift": -0.021,
+    "drift_pct": -0.0135,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-04-12 20:54:10",
+    "to": "2024-04-14 21:23:36",
+    "prev_close": 153.02,
+    "reopen": 153.04,
+    "drift": 0.02,
+    "drift_pct": 0.0131,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-04-21 20:57:34",
+    "to": "2023-04-23 21:04:08",
+    "prev_close": 133.978,
+    "reopen": 133.995,
+    "drift": 0.017,
+    "drift_pct": 0.0127,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-07-21 20:56:22",
+    "to": "2023-07-23 21:39:46",
+    "prev_close": 141.702,
+    "reopen": 141.72,
+    "drift": 0.018,
+    "drift_pct": 0.0127,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-11-24 21:55:09",
+    "to": "2023-11-26 22:12:24",
+    "prev_close": 149.508,
+    "reopen": 149.527,
+    "drift": 0.019,
+    "drift_pct": 0.0127,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-03-10 21:54:58",
+    "to": "2023-03-12 21:01:51",
+    "prev_close": 134.534,
+    "reopen": 134.517,
+    "drift": -0.017,
+    "drift_pct": -0.0126,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-04-03 20:50:47",
+    "to": "2026-04-05 21:14:20",
+    "prev_close": 159.544,
+    "reopen": 159.524,
+    "drift": -0.02,
+    "drift_pct": -0.0125,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-11-04 20:55:20",
+    "to": "2022-11-06 22:12:09",
+    "prev_close": 146.765,
+    "reopen": 146.783,
+    "drift": 0.018,
+    "drift_pct": 0.0123,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-08-04 20:54:40",
+    "to": "2023-08-06 21:21:32",
+    "prev_close": 141.668,
+    "reopen": 141.651,
+    "drift": -0.017,
+    "drift_pct": -0.012,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-10-02 20:51:56",
+    "to": "2026-10-04 21:27:44",
+    "prev_close": 157.638,
+    "reopen": 157.656,
+    "drift": 0.018,
+    "drift_pct": 0.0114,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-09-04 20:55:21",
+    "to": "2026-09-06 21:04:43",
+    "prev_close": 155.965,
+    "reopen": 155.948,
+    "drift": -0.017,
+    "drift_pct": -0.0109,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-11-08 21:56:19",
+    "to": "2024-11-10 22:05:00",
+    "prev_close": 152.64,
+    "reopen": 152.624,
+    "drift": -0.016,
+    "drift_pct": -0.0105,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-08-26 20:55:15",
+    "to": "2022-08-28 21:01:27",
+    "prev_close": 137.593,
+    "reopen": 137.607,
+    "drift": 0.014,
+    "drift_pct": 0.0102,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-05-01 20:54:37",
+    "to": "2026-05-03 21:05:31",
+    "prev_close": 156.708,
+    "reopen": 156.692,
+    "drift": -0.016,
+    "drift_pct": -0.0102,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-07-28 20:55:36",
+    "to": "2023-07-30 21:13:54",
+    "prev_close": 140.943,
+    "reopen": 140.957,
+    "drift": 0.014,
+    "drift_pct": 0.0099,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-12-22 21:54:01",
+    "to": "2023-12-25 22:24:34",
+    "prev_close": 142.234,
+    "reopen": 142.248,
+    "drift": 0.014,
+    "drift_pct": 0.0098,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-12-02 21:56:40",
+    "to": "2022-12-04 22:19:42",
+    "prev_close": 134.366,
+    "reopen": 134.353,
+    "drift": -0.013,
+    "drift_pct": -0.0097,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-07-12 20:55:09",
+    "to": "2024-07-14 21:09:42",
+    "prev_close": 158.108,
+    "reopen": 158.093,
+    "drift": -0.015,
+    "drift_pct": -0.0095,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-09-29 20:56:21",
+    "to": "2023-10-01 21:12:16",
+    "prev_close": 149.552,
+    "reopen": 149.566,
+    "drift": 0.014,
+    "drift_pct": 0.0094,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-10-25 20:55:16",
+    "to": "2024-10-27 21:01:33",
+    "prev_close": 153.174,
+    "reopen": 153.188,
+    "drift": 0.014,
+    "drift_pct": 0.0091,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-02-06 21:56:03",
+    "to": "2026-02-08 22:05:46",
+    "prev_close": 157.394,
+    "reopen": 157.408,
+    "drift": 0.014,
+    "drift_pct": 0.0089,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-09-25 20:54:51",
+    "to": "2026-09-27 21:12:59",
+    "prev_close": 157.205,
+    "reopen": 157.191,
+    "drift": -0.014,
+    "drift_pct": -0.0089,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-07-05 20:55:05",
+    "to": "2024-07-07 21:07:52",
+    "prev_close": 160.726,
+    "reopen": 160.74,
+    "drift": 0.014,
+    "drift_pct": 0.0087,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-11-29 21:53:34",
+    "to": "2024-12-01 22:04:11",
+    "prev_close": 149.619,
+    "reopen": 149.606,
+    "drift": -0.013,
+    "drift_pct": -0.0087,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-02-23 21:54:34",
+    "to": "2024-02-25 22:15:04",
+    "prev_close": 150.394,
+    "reopen": 150.407,
+    "drift": 0.013,
+    "drift_pct": 0.0086,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-03-17 20:57:10",
+    "to": "2023-03-19 21:04:18",
+    "prev_close": 131.863,
+    "reopen": 131.874,
+    "drift": 0.011,
+    "drift_pct": 0.0083,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-08-18 20:56:41",
+    "to": "2023-08-20 21:49:27",
+    "prev_close": 145.366,
+    "reopen": 145.378,
+    "drift": 0.012,
+    "drift_pct": 0.0083,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-10-21 20:56:31",
+    "to": "2022-10-23 21:25:47",
+    "prev_close": 147.894,
+    "reopen": 147.882,
+    "drift": -0.012,
+    "drift_pct": -0.0081,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-06-16 20:58:21",
+    "to": "2023-06-18 21:31:59",
+    "prev_close": 141.749,
+    "reopen": 141.738,
+    "drift": -0.011,
+    "drift_pct": -0.0078,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-12-15 21:55:42",
+    "to": "2023-12-17 22:06:59",
+    "prev_close": 142.051,
+    "reopen": 142.062,
+    "drift": 0.011,
+    "drift_pct": 0.0077,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-05-15 20:53:18",
+    "to": "2026-05-17 21:20:15",
+    "prev_close": 158.516,
+    "reopen": 158.528,
+    "drift": 0.012,
+    "drift_pct": 0.0076,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-09-15 20:55:03",
+    "to": "2023-09-17 21:11:20",
+    "prev_close": 147.715,
+    "reopen": 147.704,
+    "drift": -0.011,
+    "drift_pct": -0.0074,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-04-15 20:50:09",
+    "to": "2022-04-17 21:23:52",
+    "prev_close": 126.429,
+    "reopen": 126.42,
+    "drift": -0.009,
+    "drift_pct": -0.0071,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-08-11 20:55:05",
+    "to": "2023-08-13 21:06:17",
+    "prev_close": 144.952,
+    "reopen": 144.962,
+    "drift": 0.01,
+    "drift_pct": 0.0069,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-06-20 20:56:51",
+    "to": "2025-06-22 21:12:20",
+    "prev_close": 146.534,
+    "reopen": 146.544,
+    "drift": 0.01,
+    "drift_pct": 0.0068,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-09-05 20:56:31",
+    "to": "2025-09-07 21:02:48",
+    "prev_close": 148.071,
+    "reopen": 148.081,
+    "drift": 0.01,
+    "drift_pct": 0.0068,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-12-09 21:56:58",
+    "to": "2022-12-11 22:32:03",
+    "prev_close": 136.552,
+    "reopen": 136.561,
+    "drift": 0.009,
+    "drift_pct": 0.0066,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-10-10 20:56:26",
+    "to": "2025-10-12 21:01:21",
+    "prev_close": 151.796,
+    "reopen": 151.806,
+    "drift": 0.01,
+    "drift_pct": 0.0066,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-07-19 20:53:00",
+    "to": "2024-07-21 21:04:48",
+    "prev_close": 157.364,
+    "reopen": 157.354,
+    "drift": -0.01,
+    "drift_pct": -0.0064,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-01-12 21:56:06",
+    "to": "2024-01-14 22:10:52",
+    "prev_close": 144.898,
+    "reopen": 144.907,
+    "drift": 0.009,
+    "drift_pct": 0.0062,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-08-30 20:56:43",
+    "to": "2024-09-01 21:14:27",
+    "prev_close": 146.021,
+    "reopen": 146.03,
+    "drift": 0.009,
+    "drift_pct": 0.0062,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-01-14 21:55:01",
+    "to": "2022-01-16 22:09:56",
+    "prev_close": 114.142,
+    "reopen": 114.149,
+    "drift": 0.007,
+    "drift_pct": 0.0061,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-08-09 20:56:07",
+    "to": "2024-08-11 21:05:00",
+    "prev_close": 146.622,
+    "reopen": 146.613,
+    "drift": -0.009,
+    "drift_pct": -0.0061,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-02-27 21:56:46",
+    "to": "2026-03-01 22:05:37",
+    "prev_close": 156.139,
+    "reopen": 156.148,
+    "drift": 0.009,
+    "drift_pct": 0.0058,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-05-24 20:51:50",
+    "to": "2024-05-26 21:05:01",
+    "prev_close": 156.881,
+    "reopen": 156.89,
+    "drift": 0.009,
+    "drift_pct": 0.0057,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-01-05 21:54:29",
+    "to": "2024-01-07 22:07:10",
+    "prev_close": 144.49,
+    "reopen": 144.497,
+    "drift": 0.007,
+    "drift_pct": 0.0048,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-04-22 20:56:38",
+    "to": "2022-04-24 21:52:39",
+    "prev_close": 128.476,
+    "reopen": 128.482,
+    "drift": 0.006,
+    "drift_pct": 0.0047,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-11-03 20:56:49",
+    "to": "2023-11-05 22:21:06",
+    "prev_close": 149.352,
+    "reopen": 149.359,
+    "drift": 0.007,
+    "drift_pct": 0.0047,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-11-17 21:52:56",
+    "to": "2023-11-19 22:07:19",
+    "prev_close": 149.472,
+    "reopen": 149.465,
+    "drift": -0.007,
+    "drift_pct": -0.0047,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-05-31 20:56:44",
+    "to": "2024-06-02 21:07:39",
+    "prev_close": 157.202,
+    "reopen": 157.209,
+    "drift": 0.007,
+    "drift_pct": 0.0045,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-01-10 21:55:25",
+    "to": "2025-01-12 22:14:43",
+    "prev_close": 157.736,
+    "reopen": 157.743,
+    "drift": 0.007,
+    "drift_pct": 0.0044,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-12-29 21:56:06",
+    "to": "2024-01-01 22:15:52",
+    "prev_close": 140.858,
+    "reopen": 140.864,
+    "drift": 0.006,
+    "drift_pct": 0.0043,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-03-07 21:54:42",
+    "to": "2025-03-09 21:32:51",
+    "prev_close": 147.91,
+    "reopen": 147.916,
+    "drift": 0.006,
+    "drift_pct": 0.0041,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-03-01 21:56:37",
+    "to": "2024-03-03 22:43:22",
+    "prev_close": 150.079,
+    "reopen": 150.085,
+    "drift": 0.006,
+    "drift_pct": 0.004,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-10-04 20:55:34",
+    "to": "2024-10-06 21:02:03",
+    "prev_close": 148.658,
+    "reopen": 148.652,
+    "drift": -0.006,
+    "drift_pct": -0.004,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-05-06 20:55:00",
+    "to": "2022-05-08 21:36:47",
+    "prev_close": 130.473,
+    "reopen": 130.478,
+    "drift": 0.005,
+    "drift_pct": 0.0038,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-03-31 20:58:44",
+    "to": "2023-04-02 21:32:09",
+    "prev_close": 133.264,
+    "reopen": 133.269,
+    "drift": 0.005,
+    "drift_pct": 0.0038,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-06-10 20:56:10",
+    "to": "2022-06-12 21:16:20",
+    "prev_close": 134.349,
+    "reopen": 134.344,
+    "drift": -0.005,
+    "drift_pct": -0.0037,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-07-10 20:55:13",
+    "to": "2026-07-12 21:29:37",
+    "prev_close": 161.687,
+    "reopen": 161.681,
+    "drift": -0.006,
+    "drift_pct": -0.0037,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-07-24 20:55:45",
+    "to": "2026-07-26 21:13:53",
+    "prev_close": 163.588,
+    "reopen": 163.594,
+    "drift": 0.006,
+    "drift_pct": 0.0037,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-02-25 21:55:10",
+    "to": "2022-02-27 22:05:44",
+    "prev_close": 115.486,
+    "reopen": 115.49,
+    "drift": 0.004,
+    "drift_pct": 0.0035,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-01-19 21:53:48",
+    "to": "2024-01-21 22:16:09",
+    "prev_close": 148.197,
+    "reopen": 148.192,
+    "drift": -0.005,
+    "drift_pct": -0.0034,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-08-16 20:56:36",
+    "to": "2024-08-18 21:08:54",
+    "prev_close": 147.589,
+    "reopen": 147.594,
+    "drift": 0.005,
+    "drift_pct": 0.0034,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-08-22 20:56:41",
+    "to": "2025-08-24 21:15:00",
+    "prev_close": 146.834,
+    "reopen": 146.829,
+    "drift": -0.005,
+    "drift_pct": -0.0034,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-03-29 20:49:58",
+    "to": "2024-03-31 21:30:00",
+    "prev_close": 151.236,
+    "reopen": 151.241,
+    "drift": 0.005,
+    "drift_pct": 0.0033,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-05-03 20:55:29",
+    "to": "2024-05-05 21:06:19",
+    "prev_close": 152.941,
+    "reopen": 152.946,
+    "drift": 0.005,
+    "drift_pct": 0.0033,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-09-26 20:55:19",
+    "to": "2025-09-28 21:08:15",
+    "prev_close": 149.449,
+    "reopen": 149.454,
+    "drift": 0.005,
+    "drift_pct": 0.0033,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-05-10 20:55:38",
+    "to": "2024-05-12 21:24:40",
+    "prev_close": 155.699,
+    "reopen": 155.704,
+    "drift": 0.005,
+    "drift_pct": 0.0032,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-06-14 20:53:07",
+    "to": "2024-06-16 21:06:33",
+    "prev_close": 157.351,
+    "reopen": 157.356,
+    "drift": 0.005,
+    "drift_pct": 0.0032,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-12-12 21:54:01",
+    "to": "2025-12-14 22:14:23",
+    "prev_close": 155.859,
+    "reopen": 155.854,
+    "drift": -0.005,
+    "drift_pct": -0.0032,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-01-23 21:54:54",
+    "to": "2026-01-25 22:03:34",
+    "prev_close": 154.707,
+    "reopen": 154.712,
+    "drift": 0.005,
+    "drift_pct": 0.0032,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-06-03 20:56:01",
+    "to": "2022-06-05 21:09:41",
+    "prev_close": 130.856,
+    "reopen": 130.852,
+    "drift": -0.004,
+    "drift_pct": -0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-01-27 21:55:38",
+    "to": "2023-01-29 22:09:34",
+    "prev_close": 129.723,
+    "reopen": 129.727,
+    "drift": 0.004,
+    "drift_pct": 0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-04-17 20:54:30",
+    "to": "2026-04-19 21:33:41",
+    "prev_close": 158.773,
+    "reopen": 158.778,
+    "drift": 0.005,
+    "drift_pct": 0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-04-24 20:52:09",
+    "to": "2026-04-26 21:11:31",
+    "prev_close": 159.515,
+    "reopen": 159.51,
+    "drift": -0.005,
+    "drift_pct": -0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-06-12 20:51:34",
+    "to": "2026-06-14 21:08:04",
+    "prev_close": 160.102,
+    "reopen": 160.107,
+    "drift": 0.005,
+    "drift_pct": 0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-11-13 21:55:00",
+    "to": "2026-11-15 22:13:12",
+    "prev_close": 159.527,
+    "reopen": 159.532,
+    "drift": 0.005,
+    "drift_pct": 0.0031,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-06-17 20:54:56",
+    "to": "2022-06-19 21:15:49",
+    "prev_close": 134.998,
+    "reopen": 135.002,
+    "drift": 0.004,
+    "drift_pct": 0.003,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-12-23 21:55:12",
+    "to": "2022-12-26 22:31:25",
+    "prev_close": 132.853,
+    "reopen": 132.849,
+    "drift": -0.004,
+    "drift_pct": -0.003,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-06-30 20:53:40",
+    "to": "2023-07-02 21:06:09",
+    "prev_close": 144.243,
+    "reopen": 144.247,
+    "drift": 0.004,
+    "drift_pct": 0.0028,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-04-18 20:46:52",
+    "to": "2025-04-20 21:29:01",
+    "prev_close": 141.702,
+    "reopen": 141.706,
+    "drift": 0.004,
+    "drift_pct": 0.0028,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-06-13 20:56:11",
+    "to": "2025-06-15 21:08:51",
+    "prev_close": 143.922,
+    "reopen": 143.926,
+    "drift": 0.004,
+    "drift_pct": 0.0028,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-08-15 20:56:30",
+    "to": "2025-08-17 21:21:33",
+    "prev_close": 147.137,
+    "reopen": 147.133,
+    "drift": -0.004,
+    "drift_pct": -0.0027,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-02-04 21:56:50",
+    "to": "2022-02-06 22:06:28",
+    "prev_close": 115.272,
+    "reopen": 115.269,
+    "drift": -0.003,
+    "drift_pct": -0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-03-04 21:55:01",
+    "to": "2022-03-06 22:06:11",
+    "prev_close": 114.876,
+    "reopen": 114.879,
+    "drift": 0.003,
+    "drift_pct": 0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-03-22 20:54:30",
+    "to": "2024-03-24 21:27:53",
+    "prev_close": 151.371,
+    "reopen": 151.375,
+    "drift": 0.004,
+    "drift_pct": 0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-06-07 20:54:05",
+    "to": "2024-06-09 21:04:05",
+    "prev_close": 156.654,
+    "reopen": 156.658,
+    "drift": 0.004,
+    "drift_pct": 0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-11-28 21:56:22",
+    "to": "2025-11-30 22:09:22",
+    "prev_close": 156.062,
+    "reopen": 156.066,
+    "drift": 0.004,
+    "drift_pct": 0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-12-26 21:55:49",
+    "to": "2025-12-28 22:11:11",
+    "prev_close": 156.458,
+    "reopen": 156.462,
+    "drift": 0.004,
+    "drift_pct": 0.0026,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-07-17 20:53:14",
+    "to": "2026-07-19 21:31:37",
+    "prev_close": 162.301,
+    "reopen": 162.305,
+    "drift": 0.004,
+    "drift_pct": 0.0025,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-07-31 20:56:54",
+    "to": "2026-08-02 21:08:17",
+    "prev_close": 157.222,
+    "reopen": 157.218,
+    "drift": -0.004,
+    "drift_pct": -0.0025,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-04-07 20:51:54",
+    "to": "2023-04-09 22:00:34",
+    "prev_close": 132.02,
+    "reopen": 132.017,
+    "drift": -0.003,
+    "drift_pct": -0.0023,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-05-12 20:58:54",
+    "to": "2023-05-14 21:56:39",
+    "prev_close": 135.721,
+    "reopen": 135.724,
+    "drift": 0.003,
+    "drift_pct": 0.0022,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-07-14 20:56:43",
+    "to": "2023-07-16 21:21:31",
+    "prev_close": 138.739,
+    "reopen": 138.742,
+    "drift": 0.003,
+    "drift_pct": 0.0022,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-09-02 20:56:38",
+    "to": "2022-09-04 21:50:02",
+    "prev_close": 140.14,
+    "reopen": 140.143,
+    "drift": 0.003,
+    "drift_pct": 0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-07-07 20:55:03",
+    "to": "2023-07-09 21:43:07",
+    "prev_close": 142.109,
+    "reopen": 142.106,
+    "drift": -0.003,
+    "drift_pct": -0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-09-01 20:55:17",
+    "to": "2023-09-03 21:36:55",
+    "prev_close": 146.156,
+    "reopen": 146.153,
+    "drift": -0.003,
+    "drift_pct": -0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-12-08 21:55:55",
+    "to": "2023-12-10 22:09:15",
+    "prev_close": 144.901,
+    "reopen": 144.898,
+    "drift": -0.003,
+    "drift_pct": -0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-09-06 20:56:31",
+    "to": "2024-09-08 21:05:59",
+    "prev_close": 142.292,
+    "reopen": 142.295,
+    "drift": 0.003,
+    "drift_pct": 0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-06-06 20:54:57",
+    "to": "2025-06-08 21:23:35",
+    "prev_close": 144.769,
+    "reopen": 144.766,
+    "drift": -0.003,
+    "drift_pct": -0.0021,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-08-25 20:56:28",
+    "to": "2023-08-27 21:44:52",
+    "prev_close": 146.411,
+    "reopen": 146.408,
+    "drift": -0.003,
+    "drift_pct": -0.002,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-09-08 20:55:07",
+    "to": "2023-09-10 21:04:07",
+    "prev_close": 146.891,
+    "reopen": 146.888,
+    "drift": -0.003,
+    "drift_pct": -0.002,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-03-08 21:56:02",
+    "to": "2024-03-10 21:39:09",
+    "prev_close": 147.08,
+    "reopen": 147.083,
+    "drift": 0.003,
+    "drift_pct": 0.002,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-03-15 20:55:51",
+    "to": "2024-03-17 21:14:13",
+    "prev_close": 149.011,
+    "reopen": 149.014,
+    "drift": 0.003,
+    "drift_pct": 0.002,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-03-28 20:55:09",
+    "to": "2025-03-30 21:08:43",
+    "prev_close": 149.733,
+    "reopen": 149.736,
+    "drift": 0.003,
+    "drift_pct": 0.002,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-06-21 20:56:22",
+    "to": "2024-06-23 21:10:55",
+    "prev_close": 159.76,
+    "reopen": 159.763,
+    "drift": 0.003,
+    "drift_pct": 0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-12-20 21:54:56",
+    "to": "2024-12-22 22:10:18",
+    "prev_close": 156.294,
+    "reopen": 156.297,
+    "drift": 0.003,
+    "drift_pct": 0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-12-05 21:56:03",
+    "to": "2025-12-07 22:08:16",
+    "prev_close": 155.178,
+    "reopen": 155.175,
+    "drift": -0.003,
+    "drift_pct": -0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-03-27 20:56:01",
+    "to": "2026-03-29 21:12:01",
+    "prev_close": 160.155,
+    "reopen": 160.152,
+    "drift": -0.003,
+    "drift_pct": -0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-05-22 20:55:51",
+    "to": "2026-05-24 21:15:03",
+    "prev_close": 158.755,
+    "reopen": 158.758,
+    "drift": 0.003,
+    "drift_pct": 0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-08-28 20:54:25",
+    "to": "2026-08-30 21:24:01",
+    "prev_close": 160.054,
+    "reopen": 160.057,
+    "drift": 0.003,
+    "drift_pct": 0.0019,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-01-21 21:53:14",
+    "to": "2022-01-23 22:09:12",
+    "prev_close": 113.669,
+    "reopen": 113.667,
+    "drift": -0.002,
+    "drift_pct": -0.0018,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-01-07 21:51:30",
+    "to": "2022-01-09 22:08:06",
+    "prev_close": 115.593,
+    "reopen": 115.591,
+    "drift": -0.002,
+    "drift_pct": -0.0017,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-03-18 20:54:38",
+    "to": "2022-03-20 21:12:03",
+    "prev_close": 119.134,
+    "reopen": 119.136,
+    "drift": 0.002,
+    "drift_pct": 0.0017,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-07-01 20:56:45",
+    "to": "2022-07-03 21:35:04",
+    "prev_close": 135.256,
+    "reopen": 135.254,
+    "drift": -0.002,
+    "drift_pct": -0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-08-05 20:56:00",
+    "to": "2022-08-07 21:16:44",
+    "prev_close": 134.977,
+    "reopen": 134.975,
+    "drift": -0.002,
+    "drift_pct": -0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-08-12 20:56:39",
+    "to": "2022-08-14 21:33:16",
+    "prev_close": 133.45,
+    "reopen": 133.448,
+    "drift": -0.002,
+    "drift_pct": -0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-02-24 21:56:54",
+    "to": "2023-02-26 22:26:43",
+    "prev_close": 136.419,
+    "reopen": 136.421,
+    "drift": 0.002,
+    "drift_pct": 0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-03-03 21:55:58",
+    "to": "2023-03-05 22:15:11",
+    "prev_close": 135.958,
+    "reopen": 135.956,
+    "drift": -0.002,
+    "drift_pct": -0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-05-19 20:58:52",
+    "to": "2023-05-21 22:00:15",
+    "prev_close": 137.928,
+    "reopen": 137.926,
+    "drift": -0.002,
+    "drift_pct": -0.0015,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-09-30 20:56:58",
+    "to": "2022-10-02 22:00:49",
+    "prev_close": 144.708,
+    "reopen": 144.706,
+    "drift": -0.002,
+    "drift_pct": -0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-10-07 20:56:39",
+    "to": "2022-10-09 22:01:00",
+    "prev_close": 145.378,
+    "reopen": 145.38,
+    "drift": 0.002,
+    "drift_pct": 0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-06-23 20:53:45",
+    "to": "2023-06-25 21:08:22",
+    "prev_close": 143.575,
+    "reopen": 143.573,
+    "drift": -0.002,
+    "drift_pct": -0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-08-02 20:56:47",
+    "to": "2024-08-04 21:08:08",
+    "prev_close": 146.441,
+    "reopen": 146.439,
+    "drift": -0.002,
+    "drift_pct": -0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-05-16 20:56:36",
+    "to": "2025-05-18 21:49:35",
+    "prev_close": 145.369,
+    "reopen": 145.371,
+    "drift": 0.002,
+    "drift_pct": 0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-05-30 20:56:57",
+    "to": "2025-06-01 21:14:06",
+    "prev_close": 143.798,
+    "reopen": 143.796,
+    "drift": -0.002,
+    "drift_pct": -0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-09-19 20:56:02",
+    "to": "2025-09-21 21:05:19",
+    "prev_close": 147.833,
+    "reopen": 147.835,
+    "drift": 0.002,
+    "drift_pct": 0.0014,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-10-13 20:54:54",
+    "to": "2023-10-15 21:06:10",
+    "prev_close": 149.378,
+    "reopen": 149.38,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-10-20 20:54:46",
+    "to": "2023-10-22 21:14:41",
+    "prev_close": 149.873,
+    "reopen": 149.871,
+    "drift": -0.002,
+    "drift_pct": -0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-02-02 21:54:39",
+    "to": "2024-02-04 22:11:19",
+    "prev_close": 148.353,
+    "reopen": 148.355,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-02-09 21:56:02",
+    "to": "2024-02-11 23:01:13",
+    "prev_close": 149.23,
+    "reopen": 149.232,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-11-22 21:56:16",
+    "to": "2024-11-24 22:04:27",
+    "prev_close": 154.209,
+    "reopen": 154.211,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-10-17 20:53:43",
+    "to": "2025-10-19 21:05:09",
+    "prev_close": 150.358,
+    "reopen": 150.36,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-11-21 21:55:41",
+    "to": "2025-11-23 22:11:17",
+    "prev_close": 156.409,
+    "reopen": 156.411,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-12-19 21:55:14",
+    "to": "2025-12-21 22:05:15",
+    "prev_close": 157.429,
+    "reopen": 157.427,
+    "drift": -0.002,
+    "drift_pct": -0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-01-09 21:56:29",
+    "to": "2026-01-11 22:10:04",
+    "prev_close": 158.034,
+    "reopen": 158.036,
+    "drift": 0.002,
+    "drift_pct": 0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-08-07 20:56:08",
+    "to": "2026-08-09 21:10:02",
+    "prev_close": 157.663,
+    "reopen": 157.661,
+    "drift": -0.002,
+    "drift_pct": -0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-11-06 21:55:47",
+    "to": "2026-11-08 22:11:27",
+    "prev_close": 158.325,
+    "reopen": 158.323,
+    "drift": -0.002,
+    "drift_pct": -0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-11-20 21:56:05",
+    "to": "2026-11-22 22:22:28",
+    "prev_close": 158.561,
+    "reopen": 158.559,
+    "drift": -0.002,
+    "drift_pct": -0.0013,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-07-03 20:55:16",
+    "to": "2026-07-05 21:59:54",
+    "prev_close": 161.259,
+    "reopen": 161.261,
+    "drift": 0.002,
+    "drift_pct": 0.0012,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-01-28 21:53:23",
+    "to": "2022-01-30 22:03:11",
+    "prev_close": 115.279,
+    "reopen": 115.278,
+    "drift": -0.001,
+    "drift_pct": -0.0009,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-02-11 21:55:20",
+    "to": "2022-02-13 22:02:30",
+    "prev_close": 115.327,
+    "reopen": 115.328,
+    "drift": 0.001,
+    "drift_pct": 0.0009,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-02-18 21:55:09",
+    "to": "2022-02-20 22:01:07",
+    "prev_close": 115.012,
+    "reopen": 115.011,
+    "drift": -0.001,
+    "drift_pct": -0.0009,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-03-11 21:51:39",
+    "to": "2022-03-13 21:07:26",
+    "prev_close": 117.334,
+    "reopen": 117.333,
+    "drift": -0.001,
+    "drift_pct": -0.0009,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-03-25 20:54:00",
+    "to": "2022-03-27 21:17:33",
+    "prev_close": 122.019,
+    "reopen": 122.02,
+    "drift": 0.001,
+    "drift_pct": 0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-04-01 20:55:38",
+    "to": "2022-04-03 21:16:18",
+    "prev_close": 122.597,
+    "reopen": 122.598,
+    "drift": 0.001,
+    "drift_pct": 0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-04-08 20:55:06",
+    "to": "2022-04-10 21:09:52",
+    "prev_close": 124.11,
+    "reopen": 124.109,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-04-29 20:54:31",
+    "to": "2022-05-01 21:01:09",
+    "prev_close": 129.742,
+    "reopen": 129.743,
+    "drift": 0.001,
+    "drift_pct": 0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-05-20 20:54:46",
+    "to": "2022-05-22 21:14:28",
+    "prev_close": 127.858,
+    "reopen": 127.857,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-05-27 20:53:30",
+    "to": "2022-05-29 21:09:40",
+    "prev_close": 127.067,
+    "reopen": 127.066,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-07-29 20:53:32",
+    "to": "2022-07-31 21:07:25",
+    "prev_close": 133.237,
+    "reopen": 133.236,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-01-06 21:56:53",
+    "to": "2023-01-08 22:24:52",
+    "prev_close": 132.025,
+    "reopen": 132.024,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-01-13 21:56:00",
+    "to": "2023-01-15 22:28:11",
+    "prev_close": 127.756,
+    "reopen": 127.757,
+    "drift": 0.001,
+    "drift_pct": 0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-01-20 21:56:17",
+    "to": "2023-01-22 23:00:32",
+    "prev_close": 129.62,
+    "reopen": 129.619,
+    "drift": -0.001,
+    "drift_pct": -0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-03-24 20:58:30",
+    "to": "2023-03-26 21:43:57",
+    "prev_close": 130.577,
+    "reopen": 130.578,
+    "drift": 0.001,
+    "drift_pct": 0.0008,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-07-15 20:56:35",
+    "to": "2022-07-17 21:44:57",
+    "prev_close": 138.483,
+    "reopen": 138.484,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-07-22 20:56:03",
+    "to": "2022-07-24 21:17:08",
+    "prev_close": 136.019,
+    "reopen": 136.018,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-08-19 20:56:03",
+    "to": "2022-08-21 21:40:36",
+    "prev_close": 136.829,
+    "reopen": 136.828,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-09-16 20:56:17",
+    "to": "2022-09-18 22:00:07",
+    "prev_close": 142.971,
+    "reopen": 142.97,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-09-23 20:55:39",
+    "to": "2022-09-25 21:17:44",
+    "prev_close": 143.606,
+    "reopen": 143.605,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-10-14 20:55:01",
+    "to": "2022-10-16 21:10:17",
+    "prev_close": 148.605,
+    "reopen": 148.604,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-10-28 20:55:44",
+    "to": "2022-10-30 21:03:42",
+    "prev_close": 147.648,
+    "reopen": 147.649,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-11-18 21:56:30",
+    "to": "2022-11-20 22:32:03",
+    "prev_close": 140.343,
+    "reopen": 140.344,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-11-25 21:55:00",
+    "to": "2022-11-27 22:23:44",
+    "prev_close": 139.244,
+    "reopen": 139.245,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2022-12-16 21:56:40",
+    "to": "2022-12-18 22:12:47",
+    "prev_close": 136.187,
+    "reopen": 136.188,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-04-14 20:58:07",
+    "to": "2023-04-16 22:01:33",
+    "prev_close": 133.863,
+    "reopen": 133.862,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-04-28 20:58:39",
+    "to": "2023-04-30 21:44:22",
+    "prev_close": 136.29,
+    "reopen": 136.291,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-05-26 20:56:04",
+    "to": "2023-05-28 21:20:19",
+    "prev_close": 140.543,
+    "reopen": 140.542,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-06-02 20:58:45",
+    "to": "2023-06-04 21:59:36",
+    "prev_close": 139.959,
+    "reopen": 139.958,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-06-09 20:54:51",
+    "to": "2023-06-11 21:13:57",
+    "prev_close": 139.283,
+    "reopen": 139.282,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-09-22 20:54:49",
+    "to": "2023-09-24 21:07:52",
+    "prev_close": 148.283,
+    "reopen": 148.284,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-10-06 20:55:52",
+    "to": "2023-10-08 21:14:03",
+    "prev_close": 149.075,
+    "reopen": 149.074,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-10-27 20:55:17",
+    "to": "2023-10-29 21:20:38",
+    "prev_close": 149.595,
+    "reopen": 149.594,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2023-12-01 21:56:03",
+    "to": "2023-12-03 22:12:28",
+    "prev_close": 146.752,
+    "reopen": 146.753,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-01-26 21:56:45",
+    "to": "2024-01-28 23:00:34",
+    "prev_close": 148.064,
+    "reopen": 148.065,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-02-16 21:56:25",
+    "to": "2024-02-18 22:41:59",
+    "prev_close": 150.11,
+    "reopen": 150.109,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-08-23 20:56:15",
+    "to": "2024-08-25 21:11:32",
+    "prev_close": 144.197,
+    "reopen": 144.198,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-09-20 20:53:21",
+    "to": "2024-09-22 21:05:16",
+    "prev_close": 143.833,
+    "reopen": 143.834,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-09-27 20:56:39",
+    "to": "2024-09-29 21:32:46",
+    "prev_close": 142.128,
+    "reopen": 142.127,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-10-11 20:56:39",
+    "to": "2024-10-13 21:05:50",
+    "prev_close": 148.996,
+    "reopen": 148.997,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-10-18 20:54:52",
+    "to": "2024-10-20 21:13:44",
+    "prev_close": 149.547,
+    "reopen": 149.548,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-11-01 20:56:31",
+    "to": "2024-11-03 22:06:17",
+    "prev_close": 152.315,
+    "reopen": 152.314,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-12-06 21:55:10",
+    "to": "2024-12-08 22:05:07",
+    "prev_close": 149.913,
+    "reopen": 149.914,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-12-13 21:56:10",
+    "to": "2024-12-15 22:11:07",
+    "prev_close": 153.633,
+    "reopen": 153.632,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-02-07 21:56:07",
+    "to": "2025-02-09 22:07:24",
+    "prev_close": 151.262,
+    "reopen": 151.263,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-02-14 21:56:31",
+    "to": "2025-02-16 22:19:03",
+    "prev_close": 152.235,
+    "reopen": 152.236,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-02-21 21:54:03",
+    "to": "2025-02-23 22:11:35",
+    "prev_close": 149.228,
+    "reopen": 149.227,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-03-14 20:54:47",
+    "to": "2025-03-16 21:06:18",
+    "prev_close": 148.692,
+    "reopen": 148.693,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-03-21 20:51:01",
+    "to": "2025-03-23 21:24:16",
+    "prev_close": 149.334,
+    "reopen": 149.333,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-05-02 20:56:15",
+    "to": "2025-05-04 21:30:27",
+    "prev_close": 144.717,
+    "reopen": 144.718,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-05-09 20:54:36",
+    "to": "2025-05-11 21:16:58",
+    "prev_close": 146.127,
+    "reopen": 146.126,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-06-27 20:56:59",
+    "to": "2025-06-29 21:10:19",
+    "prev_close": 144.377,
+    "reopen": 144.378,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-07-04 20:55:59",
+    "to": "2025-07-06 21:19:25",
+    "prev_close": 144.401,
+    "reopen": 144.402,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-07-11 20:53:42",
+    "to": "2025-07-13 21:25:39",
+    "prev_close": 147.183,
+    "reopen": 147.182,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-07-25 20:56:26",
+    "to": "2025-07-27 21:13:21",
+    "prev_close": 147.665,
+    "reopen": 147.666,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-08-01 20:55:51",
+    "to": "2025-08-03 21:05:15",
+    "prev_close": 147.235,
+    "reopen": 147.236,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-08-08 20:55:20",
+    "to": "2025-08-10 21:05:27",
+    "prev_close": 147.502,
+    "reopen": 147.503,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-08-29 20:56:47",
+    "to": "2025-08-31 21:33:49",
+    "prev_close": 146.936,
+    "reopen": 146.937,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-09-12 20:56:32",
+    "to": "2025-09-14 21:15:39",
+    "prev_close": 147.548,
+    "reopen": 147.547,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-10-24 20:55:08",
+    "to": "2025-10-26 21:01:10",
+    "prev_close": 152.76,
+    "reopen": 152.761,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-11-07 21:56:26",
+    "to": "2025-11-09 22:08:40",
+    "prev_close": 153.665,
+    "reopen": 153.666,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-02-13 21:56:03",
+    "to": "2026-02-15 22:14:30",
+    "prev_close": 152.555,
+    "reopen": 152.556,
+    "drift": 0.001,
+    "drift_pct": 0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-09-11 20:56:29",
+    "to": "2026-09-13 21:40:03",
+    "prev_close": 153.358,
+    "reopen": 153.357,
+    "drift": -0.001,
+    "drift_pct": -0.0007,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-04-19 20:55:00",
+    "to": "2024-04-21 21:21:21",
+    "prev_close": 154.544,
+    "reopen": 154.543,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-11-15 21:55:39",
+    "to": "2024-11-17 22:06:53",
+    "prev_close": 154.392,
+    "reopen": 154.393,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2024-12-27 21:56:51",
+    "to": "2024-12-29 22:10:06",
+    "prev_close": 157.737,
+    "reopen": 157.736,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-01-03 21:56:58",
+    "to": "2025-01-05 22:27:03",
+    "prev_close": 157.191,
+    "reopen": 157.19,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-01-17 21:55:47",
+    "to": "2025-01-19 22:10:26",
+    "prev_close": 156.204,
+    "reopen": 156.205,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-01-31 21:55:59",
+    "to": "2025-02-02 22:07:39",
+    "prev_close": 154.841,
+    "reopen": 154.842,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-10-31 20:55:44",
+    "to": "2025-11-02 22:20:58",
+    "prev_close": 154.01,
+    "reopen": 154.009,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2025-11-14 21:56:43",
+    "to": "2025-11-16 22:23:57",
+    "prev_close": 154.528,
+    "reopen": 154.529,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-01-02 21:55:45",
+    "to": "2026-01-04 22:20:38",
+    "prev_close": 156.736,
+    "reopen": 156.735,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-01-16 21:54:23",
+    "to": "2026-01-18 22:05:41",
+    "prev_close": 157.879,
+    "reopen": 157.88,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-01-30 21:56:02",
+    "to": "2026-02-01 22:07:01",
+    "prev_close": 154.851,
+    "reopen": 154.852,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-02-20 21:55:07",
+    "to": "2026-02-22 22:06:40",
+    "prev_close": 154.847,
+    "reopen": 154.846,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-03-06 21:55:49",
+    "to": "2026-03-08 21:05:16",
+    "prev_close": 158.056,
+    "reopen": 158.057,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-03-13 20:55:32",
+    "to": "2026-03-15 21:08:44",
+    "prev_close": 159.531,
+    "reopen": 159.532,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-03-20 20:55:00",
+    "to": "2026-03-22 21:07:02",
+    "prev_close": 159.23,
+    "reopen": 159.231,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-05-08 20:55:44",
+    "to": "2026-05-10 21:25:41",
+    "prev_close": 156.558,
+    "reopen": 156.559,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-05-29 20:52:56",
+    "to": "2026-05-31 21:12:33",
+    "prev_close": 159.345,
+    "reopen": 159.344,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-06-05 20:55:03",
+    "to": "2026-06-07 21:18:39",
+    "prev_close": 160.18,
+    "reopen": 160.179,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-06-19 20:55:02",
+    "to": "2026-06-21 22:00:20",
+    "prev_close": 161.361,
+    "reopen": 161.36,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-06-26 20:55:23",
+    "to": "2026-06-28 21:38:53",
+    "prev_close": 161.693,
+    "reopen": 161.694,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-08-14 20:54:03",
+    "to": "2026-08-16 21:40:38",
+    "prev_close": 159.316,
+    "reopen": 159.317,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-08-21 20:54:34",
+    "to": "2026-08-23 21:21:46",
+    "prev_close": 158.768,
+    "reopen": 158.767,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-09-18 20:55:25",
+    "to": "2026-09-20 21:38:08",
+    "prev_close": 156.765,
+    "reopen": 156.766,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-10-09 20:56:20",
+    "to": "2026-10-11 21:15:06",
+    "prev_close": 158.126,
+    "reopen": 158.125,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-10-16 20:54:12",
+    "to": "2026-10-18 21:08:35",
+    "prev_close": 157.977,
+    "reopen": 157.978,
+    "drift": 0.001,
+    "drift_pct": 0.0006,
+    "tf": "t100"
+   },
+   {
+    "from": "2026-10-30 20:56:31",
+    "to": "2026-11-01 22:40:26",
+    "prev_close": 157.443,
+    "reopen": 157.442,
+    "drift": -0.001,
+    "drift_pct": -0.0006,
+    "tf": "t100"
+   }
+  ],
   "t750": [
    {
     "from": "2024-09-13 20:46:00",
@@ -31404,27 +35902,28 @@
  "anomaly_counts": {
   "d1": 68,
   "h4": 27,
+  "t100": 5,
   "t750": 6
  },
  "cross_validation": [
-  "daily H/L t750 vs d1, printed-day: 1267 days, H match 60 (4.7%), L match 40 (3.2%)",
-  "daily H/L t750 vs d1, session-day: 1269 days, H match 1138 (89.7%), L match 1056 (83.2%)",
-  "daily H/L t750 vs h4, printed-day: 1216 days, H match 130, L match 92",
-  "daily H/L t750 vs h4, session-day: 1011 days, H match 174, L match 168",
+  "daily H/L t100 vs d1, printed-day: 1268 days, H match 57 (4.5%), L match 58 (4.6%)",
+  "daily H/L t100 vs d1, session-day: 1269 days, H match 1189 (93.7%), L match 1091 (86.0%)",
+  "daily H/L t100 vs h4, printed-day: 1217 days, H match 143, L match 120",
+  "daily H/L t100 vs h4, session-day: 1013 days, H match 198, L match 180",
   "daily H/L h4 vs d1, session-day: 2683 days, H match 622 (23.2%), L match 594 (22.1%) - h4 grid is offset from the d1 day stamp, both readings reported"
  ],
  "phase_sweeps": {},
  "reconciliations": {
-  "t750_vs_d1_printed": {
+  "t100_vs_d1_printed": {
    "mode": "printed",
-   "days_compared": 1267,
-   "high_match": 60,
-   "low_match": 40,
+   "days_compared": 1268,
+   "high_match": 57,
+   "low_match": 58,
    "mismatches": [
     {
      "day": "2022-01-02",
      "fine_H": 115.156,
-     "fine_L": 115.105,
+     "fine_L": 115.099,
      "daily_H": 115.368,
      "daily_L": 114.95
     },
@@ -31438,7 +35937,7 @@
     {
      "day": "2022-01-04",
      "fine_H": 116.347,
-     "fine_L": 115.323,
+     "fine_L": 115.293,
      "daily_H": 116.244,
      "daily_L": 115.621
     },
@@ -31459,7 +35958,7 @@
     {
      "day": "2022-01-09",
      "fine_H": 115.668,
-     "fine_L": 115.57,
+     "fine_L": 115.554,
      "daily_H": 115.85,
      "daily_L": 115.046
     },
@@ -31493,16 +35992,16 @@
     }
    ]
   },
-  "t750_vs_d1_session": {
+  "t100_vs_d1_session": {
    "mode": "session",
    "days_compared": 1269,
-   "high_match": 1138,
-   "low_match": 1056,
+   "high_match": 1189,
+   "low_match": 1091,
    "mismatches": [
     {
      "day": "2022-01-03",
      "fine_H": 116.347,
-     "fine_L": 115.293,
+     "fine_L": 115.292,
      "daily_H": 116.347,
      "daily_L": 115.284
     },
@@ -31515,17 +36014,10 @@
     },
     {
      "day": "2022-01-20",
-     "fine_H": 114.104,
+     "fine_H": 114.121,
      "fine_L": 113.604,
      "daily_H": 114.149,
      "daily_L": 113.604
-    },
-    {
-     "day": "2022-01-25",
-     "fine_H": 114.742,
-     "fine_L": 113.778,
-     "daily_H": 114.694,
-     "daily_L": 113.778
     },
     {
      "day": "2022-02-07",
@@ -31536,7 +36028,7 @@
     },
     {
      "day": "2022-02-08",
-     "fine_H": 115.639,
+     "fine_H": 115.642,
      "fine_L": 115.323,
      "daily_H": 115.68,
      "daily_L": 115.323
@@ -31549,34 +36041,48 @@
      "daily_L": 115.459
     },
     {
-     "day": "2022-02-16",
-     "fine_H": 115.537,
-     "fine_L": 114.797,
-     "daily_H": 115.537,
-     "daily_L": 114.846
-    },
-    {
      "day": "2022-02-20",
      "fine_H": 115.125,
-     "fine_L": 114.56,
+     "fine_L": 114.672,
      "daily_H": 115.125,
      "daily_L": 114.718
     },
     {
-     "day": "2022-02-22",
-     "fine_H": 115.201,
-     "fine_L": 114.923,
-     "daily_H": 115.201,
-     "daily_L": 114.927
+     "day": "2022-02-27",
+     "fine_H": 115.739,
+     "fine_L": 114.861,
+     "daily_H": 115.766,
+     "daily_L": 114.861
+    },
+    {
+     "day": "2022-03-07",
+     "fine_H": 115.791,
+     "fine_L": 115.277,
+     "daily_H": 115.791,
+     "daily_L": 115.261
+    },
+    {
+     "day": "2022-03-09",
+     "fine_H": 116.197,
+     "fine_L": 115.813,
+     "daily_H": 116.197,
+     "daily_L": 115.799
     }
    ]
   },
-  "t750_vs_h4_printed": {
+  "t100_vs_h4_printed": {
    "mode": "printed",
-   "days_compared": 1216,
-   "high_match": 130,
-   "low_match": 92,
+   "days_compared": 1217,
+   "high_match": 143,
+   "low_match": 120,
    "mismatches": [
+    {
+     "day": "2023-01-01",
+     "fine_H": 130.926,
+     "fine_L": 130.724,
+     "daily_H": 131.046,
+     "daily_L": 130.724
+    },
     {
      "day": "2023-01-02",
      "fine_H": 131.4,
@@ -31615,7 +36121,7 @@
     {
      "day": "2023-01-08",
      "fine_H": 132.285,
-     "fine_L": 131.756,
+     "fine_L": 131.786,
      "daily_H": 132.285,
      "daily_L": 131.593
     },
@@ -31639,25 +36145,18 @@
      "fine_L": 131.776,
      "daily_H": 132.478,
      "daily_L": 131.54
-    },
-    {
-     "day": "2023-01-12",
-     "fine_H": 132.014,
-     "fine_L": 128.865,
-     "daily_H": 129.432,
-     "daily_L": 128.646
     }
    ]
   },
-  "t750_vs_h4_session": {
+  "t100_vs_h4_session": {
    "mode": "session",
-   "days_compared": 1011,
-   "high_match": 174,
-   "low_match": 168,
+   "days_compared": 1013,
+   "high_match": 198,
+   "low_match": 180,
    "mismatches": [
     {
      "day": "2023-01-01",
-     "fine_H": 131.043,
+     "fine_H": 131.046,
      "fine_L": 130.601,
      "daily_H": 131.046,
      "daily_L": 130.724
@@ -31713,14 +36212,14 @@
     },
     {
      "day": "2023-01-11",
-     "fine_H": 132.384,
+     "fine_H": 132.388,
      "fine_L": 128.865,
      "daily_H": 132.478,
      "daily_L": 131.54
     },
     {
      "day": "2023-01-12",
-     "fine_H": 129.378,
+     "fine_H": 129.432,
      "fine_L": 127.459,
      "daily_H": 129.432,
      "daily_L": 128.646
@@ -32293,6 +36792,136 @@
     "drawdown_from_max_close_pct": 2.51
    }
   },
+  "t100": {
+   "years": [
+    {
+     "year": 2022,
+     "bars": 230672,
+     "active_days": 311,
+     "bars_per_day": 741.7,
+     "implied_ticks_per_day": 74171.0,
+     "median_min_per_bar": 1.25,
+     "avg_range_usd": 0.038,
+     "median_range_usd": 0.032,
+     "avg_range_pct": 0.03,
+     "median_range_pct": 0.02,
+     "cost_base_pct_of_avg_range": 7.92,
+     "cost_stress_pct_of_avg_range": 13.19
+    },
+    {
+     "year": 2023,
+     "bars": 217850,
+     "active_days": 311,
+     "bars_per_day": 700.5,
+     "implied_ticks_per_day": 70048.0,
+     "median_min_per_bar": 1.42,
+     "avg_range_usd": 0.038,
+     "median_range_usd": 0.033,
+     "avg_range_pct": 0.03,
+     "median_range_pct": 0.02,
+     "cost_base_pct_of_avg_range": 7.9,
+     "cost_stress_pct_of_avg_range": 13.17
+    },
+    {
+     "year": 2024,
+     "bars": 232215,
+     "active_days": 314,
+     "bars_per_day": 739.5,
+     "implied_ticks_per_day": 73954.0,
+     "median_min_per_bar": 1.3,
+     "avg_range_usd": 0.04,
+     "median_range_usd": 0.033,
+     "avg_range_pct": 0.03,
+     "median_range_pct": 0.02,
+     "cost_base_pct_of_avg_range": 7.59,
+     "cost_stress_pct_of_avg_range": 12.66
+    },
+    {
+     "year": 2025,
+     "bars": 227674,
+     "active_days": 312,
+     "bars_per_day": 729.7,
+     "implied_ticks_per_day": 72972.0,
+     "median_min_per_bar": 1.33,
+     "avg_range_usd": 0.039,
+     "median_range_usd": 0.034,
+     "avg_range_pct": 0.03,
+     "median_range_pct": 0.02,
+     "cost_base_pct_of_avg_range": 7.61,
+     "cost_stress_pct_of_avg_range": 12.68
+    },
+    {
+     "year": 2026,
+     "bars": 187147,
+     "active_days": 280,
+     "bars_per_day": 668.4,
+     "implied_ticks_per_day": 66838.0,
+     "median_min_per_bar": 1.43,
+     "avg_range_usd": 0.031,
+     "median_range_usd": 0.026,
+     "avg_range_pct": 0.02,
+     "median_range_pct": 0.02,
+     "cost_base_pct_of_avg_range": 9.64,
+     "cost_stress_pct_of_avg_range": 16.06
+    }
+   ],
+   "hourly": {
+    "profile": [
+     53009,
+     51659,
+     40231,
+     35040,
+     33113,
+     37359,
+     48776,
+     59575,
+     58904,
+     50844,
+     45150,
+     46264,
+     61989,
+     73934,
+     77030,
+     67361,
+     51344,
+     42691,
+     40685,
+     37045,
+     25955,
+     11632,
+     18061,
+     27907
+    ],
+    "dead_hours": [],
+    "top_hours": [
+     14,
+     13,
+     15,
+     12,
+     7,
+     8
+    ],
+    "first_bar_hour_histogram": {
+     "0": 1269,
+     "21": 163,
+     "22": 92,
+     "23": 4
+    }
+   },
+   "febmar": {
+    "bars": 38341,
+    "peak_high": 160.462,
+    "peak_high_ts": "2026-03-29 22:35:22",
+    "max_close": 160.451,
+    "max_close_ts": "2026-03-29 22:41:29",
+    "max_range_bar": 0.956,
+    "max_range_ts": "2026-02-11 13:29:51",
+    "max_delta_close_pct": 0.57,
+    "max_delta_close_ts": "2026-02-11 13:29:51",
+    "march_trough_close": 156.096,
+    "drawdown_from_max_close_pct": 2.71
+   }
+  },
   "t750": {
    "years": [
     {
@@ -32425,18 +37054,17 @@
    }
   }
  },
- "timezone": "UTC: session-open days (first bar after a >6h gap) start at 21:00-23:59 in 99% of cases; the 21/22 split flips with US DST (EDT/EST), matching the 21:00/22:00 UTC session boundary",
- "timezone_timeframe": "t750",
+ "timezone": "UTC: session-open days (first bar after a >6h gap) start at 21:00-23:59 in 100% of cases; the 21/22 split flips with US DST (EDT/EST), matching the 21:00/22:00 UTC session boundary",
+ "timezone_timeframe": "t100",
  "first_bar_hour_histogram": {
-  "22": 167,
-  "21": 68,
-  "23": 22,
-  "1": 1,
+  "22": 92,
+  "21": 163,
+  "23": 3,
   "0": 1
  },
  "readiness": [
   "t500 ABSENT: MA layer not runnable; t500 exports required.",
-  "t100 entry layer ABSENT - faithful-transpose cells not yet runnable offline; t100 exports still required. t300/t750 cells are not derivable from t500 alone.",
+  "t100 2022-01-02..2026-11-23: entry layer READY (1095558 bars), but faithful-transpose cells NOT runnable - t500 MA layer absent, t500 exports required.",
   "not present in this run: t300, t500. t300 would be derivable from t100 (groups of 3, phase calibrated by sweep) if t100 present; t750 from t1 ticks (groups of 750) where tick coverage exists; neither is derivable from a coarser bar file alone.",
   "present extra timeframes enabling cross-validation: t750, h4, d1. NOT present in this run: t300.",
   "No strategy backtest in this run - receipt and digest only; the strategy grid is a separate, later prompt."
